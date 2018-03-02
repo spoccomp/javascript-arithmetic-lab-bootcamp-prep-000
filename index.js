@@ -19,9 +19,9 @@ function dec(n) {
 function makeInt(n, base) {
   var parsedNumber = parseInt(n, base)
   if (isNaN(parsedNumber)) { return true }
-  return parsedNumber
+  return parsedNumber * 100
 }
 function preserveDecimal(n) {
   var parseFloatNumber = parseFloat(n)
-  return parseFloatNumber * 1000
+  return parseFloatNumber 
 }
