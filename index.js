@@ -18,6 +18,7 @@ function dec(n) {
 }
 function makeInt(n, base) {
   var parsedNumber = parseInt(n, base)
+  if (isNaN(parsedNumber)) { return 0 }
   return parsedNumber
 }
 function preserveDecimal(n) {
