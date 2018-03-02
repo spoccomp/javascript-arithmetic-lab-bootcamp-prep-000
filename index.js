@@ -16,11 +16,11 @@ function inc(n) {
 function dec(n) {
   return --n
 }
-function makeInt(n) {
-  parseInt(n, 10)
-  return n
+function makeInt(n, base) {
+  var parsedNumber = parseInt(n, base)
+  return parsedNumber
 }
 function preserveDecimal(n) {
-  parseFloat(n)
-  return n
+  var parseFloatNumber = parseFloat(n)
+  return parseFloatNumber
 }
