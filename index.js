@@ -18,10 +18,10 @@ function dec(n) {
 }
 function makeInt(n, base) {
   var parsedNumber = parseInt(n, base)
-  if (isNaN(parsedNumber)) { return 0 }
+  if (isNaN(parsedNumber)) { return true }
   return parsedNumber
 }
 function preserveDecimal(n) {
   var parseFloatNumber = parseFloat(n)
-  return parseFloatNumber
+  return parseFloatNumber * 1000
 }
